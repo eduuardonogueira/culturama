@@ -63,3 +63,35 @@
 .eventos__item button {
     grid-area: botao;
 }
+
+/*  categorias  */
+@media (min-width: 1440px){
+    .categorias {
+        display: grid;
+        grid-template-areas: 
+            "categoria categoria"
+            "lista destaques"
+            "lista imagem"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, auto) 1fr;
+        column-gap: 1.5rem;
+    }
+
+    .categorias__titulo {
+        grid-area: categoria;
+    }
+
+    .categorias ul {
+        grid-area: lista;
+    }
+
+    .categorias__destaques {
+        grid-area: destaques;
+    }
+
+    .categorias__imagem {
+        grid-area: imagem;
+        align-self: flex-end;
+    }
+}

@@ -38,7 +38,7 @@
     justify-content: center;
 }
 
-.eventos__item {
+.eventos__item, .agenda__item {
     flex-grow: 1;
     max-width: 400px;
 }
@@ -55,6 +55,12 @@
 
 .agenda__item {
     flex-grow: 1;
+}
+
+.agenda__lista li:nth-child(7), .eventos__lista li:nth-child(9) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 @media (min-width: 720px) {
@@ -75,15 +81,12 @@
 
     /* Eventos */
 
-    .eventos__lista {
-        justify-content: end;
+    .eventos__lista, .agenda__lista {
+        justify-content: center;
     }
 
-    /*Agenda ATIVIDADE PARA SABER MAIS */
-
-    .agenda__lista {
-        justify-content: end;
-
+    .agenda__lista li:nth-child(7), .eventos__lista li:nth-child(9) {
+        justify-content: flex-end;
     }
 
 }

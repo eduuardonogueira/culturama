@@ -120,4 +120,8 @@
         order: 2;
     }
 
+    /* Eventos */
+    .eventos__item {
+        max-width: 307px;
+    }
 }

@@ -12,6 +12,51 @@
     grid-row: 2/4;
 }
 
+/* Rodapé */
+footer {
+    display: grid;
+    grid-template-areas: "encontre cidades"
+        "categorias sobre"
+        "anuncie logo"
+        ;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+}
+
+.rodape__lista:nth-child(1){
+    grid-area: encontre;
+}
+
+.rodape__lista:nth-child(2){
+    grid-area: cidades;
+}
+
+.rodape__lista:nth-child(3){
+    grid-area: categorias;
+}
+
+.rodape__lista:nth-child(4){
+    grid-area: sobre;
+}
+
+.rodape__lista:nth-child(5){
+    grid-area: anuncie;
+}
+
+.rodape__logo{
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+
+.rodape__logo h4 {
+    width: 82px;
+    margin-left: 29px;
+}
+
+
 @media(min-width: 720px) {
     .banner {
         column-gap: 1.5rem;
@@ -60,8 +105,19 @@
     margin-bottom: 1rem;
 }
 
-/*  categorias  */
+/* rodape */
+.rodape {
+    grid-template-areas: 
+        "encontre cidades categorias sobre"
+        "anuncie . . logo"
+        ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr;
+}
+
+
 @media (min-width: 1280px){
+    /* Categorias */
     .categorias {
         display: grid;
         grid-template-areas: 
@@ -89,6 +145,14 @@
     .categorias .categorias__imagem {
         grid-area: imagem;
         height: 224px;
+    }
+
+    /* rodape */
+    .rodape {
+        grid-template-areas: 
+            "encontre cidades categorias sobre anuncie logo"
+            ;
+        grid-template-columns: repeat(6, 1fr);
     }
 }
 

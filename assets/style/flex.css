@@ -40,7 +40,7 @@
 
 .eventos__item, .agenda__item {
     flex-grow: 1;
-    max-width: 400px;
+    max-width: 410px;
 }
 
 /*Agenda ATIVIDADE PARA SABER MAIS */
@@ -91,7 +91,7 @@
 
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
 
     /* Cabeçalho */
 
@@ -119,7 +119,20 @@
     .menu__item:nth-child(5) {
         order: 2;
     }
+}
 
+@media (min-width: 1280px) {
+    .categorias__destaques {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .destaques {
+        padding: 8px 0 20px !important;
+    }
+}
+
+@media (min-width: 1440px){
     /* Eventos */
     .eventos__item {
         max-width: 307px;

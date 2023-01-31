@@ -82,7 +82,7 @@
     /* Eventos */
 
     .eventos__lista, .agenda__lista {
-        justify-content: center;
+        justify-content: start;
     }
 
     .agenda__lista li:nth-child(7), .eventos__lista li:nth-child(9) {
